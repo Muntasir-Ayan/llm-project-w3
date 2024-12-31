@@ -1,0 +1,10 @@
+
+
+
+
+docker-compose run django python manage.py makemigrations
+docker-compose run django python manage.py migrate
+
+docker exec -it django-app python manage.py generate_content
+
+python manage.py createsuperuser
