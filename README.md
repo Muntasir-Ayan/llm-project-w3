@@ -12,8 +12,8 @@ Using Gemini this Django project will generate new hotel Title, description from
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd ollama-prop-rewriter
+git clone https://github.com/Muntasir-Ayan/llm_project.git
+cd llm_project
 ```
 
 ### 2. Install Dependencies
