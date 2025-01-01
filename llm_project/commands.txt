@@ -7,4 +7,10 @@ docker-compose run django python manage.py migrate
 
 docker exec -it django-app python manage.py generate_content
 
+docker exec -it django-app bash
+
 python manage.py createsuperuser
+
+pytest --cov=hotel_data
+
+pytest --cov=hotel_data --cov-report=html
