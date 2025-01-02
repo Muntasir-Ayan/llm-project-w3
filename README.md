@@ -1,6 +1,20 @@
 # Django Project for Hotel Data Transformation
 
 This Django project leverages the Gemini Flash 2.0 model to enhance hotel data by generating unique titles, descriptions, summaries, reviews, and ratings. It integrates with a Dockerized PostgreSQL database, shared with a Scrapy project.
+---
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Environment Setup](#environment-setup)
+  - [1. Clone the Repository](#1-clone-the-repository)
+  - [2. Install Dependencies](#2-install-dependencies)
+- [Running the Application](#running-the-application)
+  - [1. Start the Services](#1-start-the-services)
+  - [2. Apply Migrations](#2-apply-migrations)
+  - [3. Generate Content](#3-generate-content)
+  - [4. Create a Superuser](#4-create-a-superuser)
+- [Testing](#testing)
+- [Summary](#summary)
 
 ---
 ## Features
@@ -90,7 +104,7 @@ docker exec -it django-app bash
 python manage.py createsuperuser
 ```
 
-Access the Django admin panel at [http://localhost:8000/admin](http://localhost:8000/admin) and see the database table.
+Access the Django admin panel at [http://localhost:8000/admin](http://localhost:8000/admin) and check the database table.
 
 ---
 ## Testing
